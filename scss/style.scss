@@ -1,0 +1,71 @@
+@import 'config';
+@import 'buttons';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: $poppins;
+  background: $primary-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none
+}
+
+
+
+.showcase {
+  background-image: url('../images/bg-desktop.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  .top-showcase {
+    padding: 4rem 4rem;
+  }
+
+
+  .container {
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      padding: 0 4rem;
+
+      .text-container {
+        padding: 3rem 3rem;
+        h2 {
+          line-height: 1.8;
+          font-weight: 600;
+          font-size: 2rem;
+        }
+        p {
+          padding: 1rem 0rem 2rem 0;
+          font-family: $font-stack;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fff;
+      padding: 0 4rem 2rem 4rem;
+      i {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 .5rem;
+        padding: 0 .5rem;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        border: 1px solid #fff;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@import 'mobile';

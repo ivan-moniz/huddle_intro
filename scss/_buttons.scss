@@ -1,0 +1,11 @@
+%btn {
+  border-radius: 20px;
+  padding: 10px 50px;
+  margin: 3px;
+  box-shadow: 10px 10px 20px  rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  @extend %btn;
+  background: #fff;
+}

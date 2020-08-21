@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  padding: 10px 50px;
+  margin: 3px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #674baf;
+}
+
+a {
+  color: #674baf;
+  text-decoration: none;
+}
+
+.showcase {
+  background-image: url("../images/bg-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
+.showcase .top-showcase {
+  padding: 4rem 4rem;
+}
+.showcase .container .flex-container {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 0 4rem;
+}
+.showcase .container .flex-container .text-container {
+  padding: 3rem 3rem;
+}
+.showcase .container .flex-container .text-container h2 {
+  line-height: 1.8;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.showcase .container .flex-container .text-container p {
+  padding: 1rem 0rem 2rem 0;
+  font-family: "Open Sans", sans-serif;
+}
+.showcase .container .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  padding: 0 4rem 2rem 4rem;
+}
+.showcase .container .social-icons i {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+@media (max-width: 701px) {
+  .showcase .top-showcase img {
+    width: 50%;
+  }
+  .showcase .container .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .showcase .container .flex-container img {
+    max-width: 100%;
+  }
+  .showcase .container .flex-container .text-container {
+    padding: 3rem 0rem;
+  }
+  .showcase .container .flex-container .text-container h2 {
+    font-size: 1.6rem;
+  }
+  .showcase .container .flex-container .text-container .btn-primary {
+    padding: 10px 80px;
+  }
+  .showcase .container .social-icons {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .showcase .container .flex-container .text-container h2 {
+    font-size: 1.3rem;
+  }
+  .showcase .container .flex-container .text-container p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
